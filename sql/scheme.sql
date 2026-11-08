@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS archioracle;
+USE archioracle;
+
+CREATE TABLE phrases (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    phrase VARCHAR(255) NOT NULL,
+    category VARCHAR(50) DEFAULT 'neutral',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
