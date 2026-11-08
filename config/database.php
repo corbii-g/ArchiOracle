@@ -1,7 +1,6 @@
 <?php
-// Change these values to match your local setup
 $host     = 'localhost';
-$dbname   = 'vague_8ball';
+$dbname   = 'archioracle';
 $username = 'root';
 $password = '';          // empty on XAMPP/MAMP by default
 
