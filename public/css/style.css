@@ -421,34 +421,15 @@ footer {
     text-align: center;
 }
 
-.entry-link {
-    position: fixed;
-    bottom: 24px;
-    right: 24px;
-    padding: 12px 20px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #06b6d4, #8b5cf6);
-    color: white;
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 600;
-    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
-    transition: transform 0.2s, box-shadow 0.2s;
-    z-index: 100;
-}
 
-.entry-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 28px rgba(139, 92, 246, 0.55);
-}
 .entry-link-wrapper {
-    position: fixed;
+    position: fixed;      
     bottom: 24px;
     right: 24px;
     z-index: 100;
 }
 
-.entry-link-wrapper .entry-link {
+.entry-link {
     display: inline-block;
     padding: 12px 20px;
     border-radius: 12px;
@@ -461,16 +442,16 @@ footer {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.entry-link-wrapper .entry-link:hover {
+.entry-link:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 28px rgba(139, 92, 246, 0.55);
 }
 
-/* On mobile move it a bit higher so it doesn't clash with the home bar */
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     .entry-link-wrapper {
-        bottom: 32px;
-        right: 16px;
+        position: static;
+        margin-top: 1.5rem;
+        text-align: center;
     }
 }
 
