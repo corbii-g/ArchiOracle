@@ -60,7 +60,7 @@ if (isset($_GET['action']) && $_GET['action'] === 'get_phrase') {
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="stylesheet" href="css/style.css">
     <title>Archioracle – Palla 8 Vaga</title>
     <script src="js/app.js" defer></script>
@@ -85,6 +85,11 @@ if (isset($_GET['action']) && $_GET['action'] === 'get_phrase') {
     </div>
 
     <p class="hint">Clicca la palla per scuoterla</p>
+    <div class="entry-link-wrapper">
+        <a href="add_entry.php" class="entry-link">Aggiungi una entry!</a>
+    </div>
+    
+    <img src="assets/qr-code.png" alt="QR Code" class="qr-code">
 
     <footer>
         Archioracle &bull; Progetto Open Day
